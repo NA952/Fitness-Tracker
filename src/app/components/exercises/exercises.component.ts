@@ -13,12 +13,15 @@ export class ExercisesComponent implements OnInit{
   constructor(private exerciseService: ExerciseService) {}
 
   ngOnInit(): void{
-    this.exerciseService.getExercises().subscribe((exercises) => this.exercises = exercises);
+    this.exerciseService.getExercises().subscribe(element => {
+      this.exercises = element
+      console.log(element)
+    })
   }
 
   deleteExercise(exercise: Exercise) {
-    console.log(exercise.name)
-    this.exerciseService.deleteExerise(exercise).subscribe(() => this.exercises = this.exercises.filter(ex => ex.id !== exercise.id))
+    console.log(exercise._name)
+    this.exerciseService.deleteExerise(exercise).subscribe(() => this.exercises = this.exercises.filter(ex => ex._id !== exercise._id))
   }
 
   addExercise(exericise: Exercise) {
@@ -27,6 +30,6 @@ export class ExercisesComponent implements OnInit{
   }
 
   updateExercise(exercise: Exercise) {
-    this.exerciseService.updateExercise(exercise).subscribe(() => this.exercises.forEach(ex => {if(ex.id == exercise.id) {ex = exercise}}))
+    this.exerciseService.updateExercise(exercise).subscribe(() => this.exercises.forEach(ex => {if(ex._id == exercise._id) {ex = exercise}}))
   }
 }

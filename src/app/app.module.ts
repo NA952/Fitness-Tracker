@@ -10,6 +10,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddExerciseComponent } from './components/add-exercise/add-exercise.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { UsersComponent } from './components/users/users.component';
+import { UserComponent } from './components/user/user.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -18,7 +22,11 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     ExercisesComponent,
     ExerciseSingleComponent,
-    AddExerciseComponent
+    AddExerciseComponent,
+    DashboardComponent,
+    UsersComponent,
+    UserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

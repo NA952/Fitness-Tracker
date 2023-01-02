@@ -17,11 +17,11 @@ export class ExerciseSingleComponent {
   faCircleXMark = faCircleXmark
 
   plus(){
-    this.exercise.weight += 5;
+    this.exercise._weight += 5;
     this.onUpdate()
   }
   minus() {
-    this.exercise.weight -= 5;
+    this.exercise._weight -= 5;
     this.onUpdate()
   }
 

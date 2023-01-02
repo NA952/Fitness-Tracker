@@ -1,8 +1,8 @@
 <div class="ex">
-    <h3>{{exercise.name}}</h3>
+    <h3>{{exercise._name}}</h3>
     <div class="weight">
         <button class="ex-btn" (click)="minus()"><fa-icon [icon]="faMinus"></fa-icon></button>
-        <div>{{exercise.weight}}kg</div>
+            <input class="ex-input"[(ngModel)]="exercise._weight" type="number"/>kg
         <button class="ex-btn" (click)="plus()"><fa-icon [icon]="faPlus"></fa-icon></button>
         <fa-icon class="delete-btn" [icon]="faCircleXMark" (click)="onDelete(exercise)"></fa-icon>
     </div>

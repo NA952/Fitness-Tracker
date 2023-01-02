@@ -18,9 +18,9 @@ export class AddExerciseComponent {
     }
 
     const newExercise = {
-      id: this.getRandom(9).toString(),
-      name: this.name!,
-      weight: this.weight!
+      _id: this.getRandom(9).toString(),
+      _name: this.name!,
+      _weight: this.weight!
     }
     this.onAddExercise.emit(newExercise)
 

@@ -1,5 +1,5 @@
 export interface Exercise {
-    id?: string;
-    name: string;
-    weight: number;
+    _id: string;
+    _name: string;
+    _weight: number;
 }
