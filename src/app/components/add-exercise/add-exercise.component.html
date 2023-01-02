@@ -1,0 +1,11 @@
+<form class="add-container" (ngSubmit)="onSubmit()">
+    <div class="add-form">
+        <h4>Name</h4>
+        <input class="form_field" name="name" type="text" [(ngModel)]="name"/>
+        <h4>Weight</h4>
+        <input class="form_field" name="weight" type="number" [(ngModel)]="weight"/>
+
+    </div>
+    <input type="submit" class="add-btn" value="Done">
+</form>
+

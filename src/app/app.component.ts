@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fintess-tracker';
+  addClicked: boolean = false;
+
+  onAddClicked() {
+    console.log(this.addClicked)
+    this.addClicked = !this.addClicked
+  } 
 }

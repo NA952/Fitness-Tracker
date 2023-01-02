@@ -1,0 +1,24 @@
+{
+  "exercises": [
+    {
+      "id": "1",
+      "name": "Bench Press",
+      "weight": 30
+    },
+    {
+      "id": "3",
+      "name": "LegPress",
+      "weight": 70
+    },
+    {
+      "id": "11",
+      "name": "Bench Press",
+      "weight": 25
+    },
+    {
+      "id": "838997253",
+      "name": "Lunges",
+      "weight": 50
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<div>
+    <h1>Exercise tracker</h1>
+
+    <button *ngIf="!addClicked" class="btn" (click)="onClick()">Add</button>
+    <button *ngIf="addClicked" class="btn" (click)="onClick()"><fa-icon [icon]="faX"></fa-icon></button>
+</div>
+

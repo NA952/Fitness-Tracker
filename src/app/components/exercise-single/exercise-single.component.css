@@ -1,0 +1,50 @@
+.ex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid steelblue;
+    border-radius: 5px;
+    padding: 30px;
+}
+.weight {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin-right: 0;
+}
+.weight div {
+    width: 50px;
+    text-align: center;
+}
+fa-icon {
+    padding-inline: 10px;
+    margin-right: 0;
+}
+
+.ex-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    margin: 5px;
+    font-size: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-shadow: 2px 2px steelblue;
+  }
+
+.ex-btn:focus {
+outline: none;
+}
+.ex-btn:active {
+transform: scale(0.95);
+box-shadow: 0 0;
+}
+
+.delete-btn {
+    cursor: pointer;
+}

@@ -1,0 +1,2 @@
+<app-add-exercise *ngIf="addClicked" (onAddExercise)="addExercise($event)"></app-add-exercise>
+<app-exercise-single *ngFor="let exercise of exercises" [exercise]="exercise" (onDeleteExercise)="deleteExercise(exercise)" (onUpdateExercise)="updateExercise(exercise)"></app-exercise-single>
